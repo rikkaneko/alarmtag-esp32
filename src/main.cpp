@@ -25,8 +25,12 @@ const char *CONTROL_SERVICE_UUID = "4ac6a418-d0eb-4016-a8a7-090467c9cf1c";
 const char *ALERT_POLICY_CONFIG_CHARACTERISTIC_UUID = "154456ac-0b87-4c7e-a716-3ebf0055262d";
 const char *MAKE_ALERT_CHARACTERISTIC_UUID = "e75b30ba-c8eb-4d65-9239-02a8a7877a1d";
 const char *PIN_AUTH_CHARACTERISTIC_UUID = "d25822e9-eba6-4d27-8f03-179a03e588ab";
-constexpr int LED_PIN = 2;
-constexpr int BUZZER_PIN = 15;
+constexpr int RGB_PIN[] = {27, 25, 33};
+constexpr int BUZZER_PIN = 32;
+
+enum RGB {
+  Red = 0, Green = 1, Blue = 2
+};
 
 BLEAdvertising *adverting;
 hw_timer_t *alarm_timer = nullptr;
@@ -78,14 +82,14 @@ std::string get_client_address(esp_bd_addr_t address) {
   return remoteAddress;
 }
 
-class CustomBLEServerCallbacks: public BLEServerCallbacks {
+class CustomBLEServerCallbacks : public BLEServerCallbacks {
 public:
   void onConnect(BLEServer *pServer, esp_ble_gatts_cb_param_t *param) override {
     BLEServerCallbacks::onConnect(pServer, param);
     auto address = get_client_address(param->connect.remote_bda);
     Serial.printf("client: connected (%s)\n", address.c_str());
     timerAlarmDisable(advising_timer);
-    digitalWrite(LED_PIN, LOW);
+    digitalWrite(RGB_PIN[RGB::Blue], HIGH);
     // Check device-lock
     if (((flags >> 1) & 1U) == 0 || !config.isKey("device-pin")) {
       is_auth = true;
@@ -104,7 +108,7 @@ public:
   }
 };
 
-class AlertPolicyCallbacks: public BLECharacteristicCallbacks {
+class AlertPolicyCallbacks : public BLECharacteristicCallbacks {
 public:
   void onWrite(BLECharacteristic *pCharacteristic) override {
     BLECharacteristicCallbacks::onWrite(pCharacteristic);
@@ -151,7 +155,7 @@ public:
   }
 };
 
-class ToggleAlertCallbacks: public BLECharacteristicCallbacks {
+class ToggleAlertCallbacks : public BLECharacteristicCallbacks {
 public:
   void onWrite(BLECharacteristic *pCharacteristic) override {
     // Check auth state
@@ -173,7 +177,7 @@ public:
   }
 };
 
-class PINAuthCallbacks: public BLECharacteristicCallbacks {
+class PINAuthCallbacks : public BLECharacteristicCallbacks {
 public:
   void onWrite(BLECharacteristic *pCharacteristic) override {
     BLECharacteristicCallbacks::onWrite(pCharacteristic);
@@ -211,10 +215,13 @@ void setup() {
     Serial.println("auth: device is locked");
   }
   // Initialize pin-outs
-  pinMode(LED_PIN, OUTPUT);
   pinMode(BUZZER_PIN, OUTPUT);
-  digitalWrite(LED_PIN, LOW);
+  for (auto p: RGB_PIN) {
+    pinMode(p, OUTPUT);
+    digitalWrite(p, HIGH);
+  }
   digitalWrite(BUZZER_PIN, LOW);
+  digitalWrite(RGB_PIN[RGB::Red], LOW);
   // Initialize alarm_timer
   alarm_timer = timerBegin(0, 80, true);
   timerAlarmWrite(alarm_timer, 100000, true);
@@ -225,7 +232,7 @@ void setup() {
   advising_timer = timerBegin(1, 80, true);
   timerAlarmWrite(advising_timer, 500000, true);
   timerAttachInterrupt(advising_timer, []() {
-    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+    digitalWrite(RGB_PIN[RGB::Blue], !digitalRead(RGB_PIN[RGB::Blue]));
   }, true);
   // Initialize BLE device
   BLEDevice::init("AlarmTag");
@@ -235,7 +242,8 @@ void setup() {
   // Control alert policy
   auto *alert_policy_config =
       control_service->createCharacteristic(ALERT_POLICY_CONFIG_CHARACTERISTIC_UUID,
-                                            BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE | BLECharacteristic::PROPERTY_NOTIFY);
+                                            BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE |
+                                            BLECharacteristic::PROPERTY_NOTIFY);
   alert_policy_config->setValue(flag_text(flags));
   alert_policy_config->setCallbacks(new AlertPolicyCallbacks);
   // Make alert
@@ -256,6 +264,7 @@ void setup() {
   adverting->setMinPreferred(0x06);  // functions that help with iPhone connections issue
   adverting->setMinPreferred(0x12);
   start_advising();
+  digitalWrite(RGB_PIN[RGB::Red], HIGH);
 }
 
 void loop() {}
