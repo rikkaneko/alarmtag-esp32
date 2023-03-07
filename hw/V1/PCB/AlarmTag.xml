@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\kwany\OneDrive\POLYU\EIE controller contest\AlarmTag\AlarmTag_PCB\AlarmTag.kicad_sch</source>
+    <date>1/17/2023 4:41:51 PM</date>
+    <tool>Eeschema (6.0.10)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>AlarmTag.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1μC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78384dea-182a-428a-9206-f9dbae535b0b</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1μC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13c7cdee-b4db-43e2-b484-7d2be0795cbe</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1μC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa74c382-d3f0-417a-bb2f-01cceb4e1989</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>2.2μC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c88878d-90aa-4e09-9b9d-25aaeb81fb7d</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1μC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53844df2-a5a1-43dc-b6d4-a29a3d811e76</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED_ABGR</value>
+      <footprint>LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100</footprint>
+      <libsource lib="Device" part="LED_ABGR" description="RGB LED, anode/blue/green/red"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>954a3b86-498d-4642-84a0-75ee10904fb2</tstamps>
+    </comp>
+    <comp ref="LDO1">
+      <value>IFX27001TFV33</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-3_TabPin2</footprint>
+      <datasheet>https://static6.arrow.com/aropdfconversion/dc75757ae45a88e5f69bdce3f2a651a5fe0ca07d/ifx27001_ds_10.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="IFX27001TFV33" description="1A Low Dropout Regulator, positive, 3.3V fixed output, TO-252-3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7eecc4ee-f365-4560-a1da-4c9df08c63ac</tstamps>
+    </comp>
+    <comp ref="LDO2">
+      <value>AP7384-50Y</value>
+      <footprint>Package_TO_SOT_SMD:SOT-89-3</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP7384.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AP7384-50Y" description="50mA Low Dropout Voltage Regulator, Fixed Output 5V, Wide Input Voltage Range 40V, SOT-89-3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18db0c06-1e5e-4ac6-b9d3-859701c73897</tstamps>
+    </comp>
+    <comp ref="LS1">
+      <value>CMT-1032-85-SMT-TR</value>
+      <footprint>SamacSys_Parts:CMT103285SMTTR</footprint>
+      <datasheet>https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/afa1278b080ae5674de77097152a5711.pdf</datasheet>
+      <fields>
+        <field name="Description">Speakers &amp; Transducers buzzer, 10 mm, 3.2 mm deep, M, 5 V, 85 dB, Surface Mount (SMT), Audio Transducer</field>
+        <field name="Height">3.8</field>
+        <field name="Manufacturer_Name">CUI Inc.</field>
+        <field name="Manufacturer_Part_Number">CMT-1032-85-SMT-TR</field>
+        <field name="Mouser Part Number">490-CMT-1032-85SMTTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/CMT-1032-85-SMT-TR?qs=P1JMDcb91o7okMZ5MHxvIw%3D%3D</field>
+      </fields>
+      <libsource lib="CMT-1032-85-SMT-TR" part="CMT-1032-85-SMT-TR" description="Speakers &amp; Transducers buzzer, 10 mm, 3.2 mm deep, M, 5 V, 85 dB, Surface Mount (SMT), Audio Transducer"/>
+      <property name="Description" value="Speakers &amp; Transducers buzzer, 10 mm, 3.2 mm deep, M, 5 V, 85 dB, Surface Mount (SMT), Audio Transducer"/>
+      <property name="Height" value="3.8"/>
+      <property name="Manufacturer_Name" value="CUI Inc."/>
+      <property name="Manufacturer_Part_Number" value="CMT-1032-85-SMT-TR"/>
+      <property name="Mouser Part Number" value="490-CMT-1032-85SMTTR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/CUI-Devices/CMT-1032-85-SMT-TR?qs=P1JMDcb91o7okMZ5MHxvIw%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Mouser Testing Part Number" value=""/>
+      <property name="Mouser Testing Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c86f67d3-7a0f-4183-9220-49ff71fe58b3</tstamps>
+    </comp>
+    <comp ref="MCU1">
+      <value>ESP32-WROOM-32D</value>
+      <footprint>RF_Module:ESP32-WROOM-32</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf</datasheet>
+      <libsource lib="RF_Module" part="ESP32-WROOM-32D" description="RF Module, ESP32-D0WD SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb7b249e-fac3-4589-b74f-2da98ef5c1a6</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NMOS_DGS</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2_TabPin1</footprint>
+      <libsource lib="Device" part="Q_NMOS_DGS" description="N-MOSFET transistor, drain/gate/source"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9f36f2a6-a359-4f72-adec-d59b059c892c</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K %1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6d15471-2b79-4742-96e1-bec9e5ebf9d7</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K %1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90c7c11d-9118-45a6-bd24-d9852c6a51e3</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10K %1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4fe1e31d-3d8b-46ff-9545-9a67e106339a</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10K %1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdf606e8-e6a4-4def-94dc-516d9684cdc4</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10K %1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>140be4a8-2d19-47cb-9d50-fb3174e750aa</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1K 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c571aaaf-39f4-4871-8dc5-28c724c384cf</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1K 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>650180f0-80a3-4568-875a-15ef99e21114</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>SamacSys_Parts:EVPBV4C3L000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="AlarmTag.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d174a6a-5e06-43c3-8420-8fc7ba810763</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CMT-1032-85-SMT-TR" part="CMT-1032-85-SMT-TR">
+      <description>Speakers &amp; Transducers buzzer, 10 mm, 3.2 mm deep, M, 5 V, 85 dB, Surface Mount (SMT), Audio Transducer</description>
+      <docs>https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/afa1278b080ae5674de77097152a5711.pdf</docs>
+      <fields>
+        <field name="Reference">LS</field>
+        <field name="Value">CMT-1032-85-SMT-TR</field>
+        <field name="Footprint">CMT103285SMTTR</field>
+        <field name="Datasheet">https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/afa1278b080ae5674de77097152a5711.pdf</field>
+        <field name="Description">Speakers &amp; Transducers buzzer, 10 mm, 3.2 mm deep, M, 5 V, 85 dB, Surface Mount (SMT), Audio Transducer</field>
+        <field name="Height">3.8</field>
+        <field name="Manufacturer_Name">CUI Inc.</field>
+        <field name="Manufacturer_Part_Number">CMT-1032-85-SMT-TR</field>
+        <field name="Mouser Part Number">490-CMT-1032-85SMTTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/CMT-1032-85-SMT-TR?qs=P1JMDcb91o7okMZ5MHxvIw%3D%3D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="DUMMY_1" type="passive"/>
+        <pin num="4" name="DUMMY_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_ABGR">
+      <description>RGB LED, anode/blue/green/red</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ABGR</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="BK" type="passive"/>
+        <pin num="3" name="GK" type="passive"/>
+        <pin num="4" name="RK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_DGS">
+      <description>N-MOSFET transistor, drain/gate/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_DGS</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_Module" part="ESP32-WROOM-32D">
+      <description>RF Module, ESP32-D0WD SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>ESP32?WROOM?32*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-WROOM-32D</field>
+        <field name="Footprint">RF_Module:ESP32-WROOM-32</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="SENSOR_VP" type="input"/>
+        <pin num="5" name="SENSOR_VN" type="input"/>
+        <pin num="6" name="IO34" type="input"/>
+        <pin num="7" name="IO35" type="input"/>
+        <pin num="8" name="IO32" type="bidirectional"/>
+        <pin num="9" name="IO33" type="bidirectional"/>
+        <pin num="10" name="IO25" type="bidirectional"/>
+        <pin num="11" name="IO26" type="bidirectional"/>
+        <pin num="12" name="IO27" type="bidirectional"/>
+        <pin num="13" name="IO14" type="bidirectional"/>
+        <pin num="14" name="IO12" type="bidirectional"/>
+        <pin num="15" name="GND" type="passive"/>
+        <pin num="16" name="IO13" type="bidirectional"/>
+        <pin num="17" name="SHD/SD2" type="bidirectional"/>
+        <pin num="18" name="SWP/SD3" type="bidirectional"/>
+        <pin num="19" name="SCS/CMD" type="bidirectional"/>
+        <pin num="20" name="SCK/CLK" type="bidirectional"/>
+        <pin num="21" name="SDO/SD0" type="bidirectional"/>
+        <pin num="22" name="SDI/SD1" type="bidirectional"/>
+        <pin num="23" name="IO15" type="bidirectional"/>
+        <pin num="24" name="IO2" type="bidirectional"/>
+        <pin num="25" name="IO0" type="bidirectional"/>
+        <pin num="26" name="IO4" type="bidirectional"/>
+        <pin num="27" name="IO16" type="bidirectional"/>
+        <pin num="28" name="IO17" type="bidirectional"/>
+        <pin num="29" name="IO5" type="bidirectional"/>
+        <pin num="30" name="IO18" type="bidirectional"/>
+        <pin num="31" name="IO19" type="bidirectional"/>
+        <pin num="32" name="NC" type="no_connect"/>
+        <pin num="33" name="IO21" type="bidirectional"/>
+        <pin num="34" name="RXD0/IO3" type="bidirectional"/>
+        <pin num="35" name="TXD0/IO1" type="bidirectional"/>
+        <pin num="36" name="IO22" type="bidirectional"/>
+        <pin num="37" name="IO23" type="bidirectional"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AP7384-50Y">
+      <description>50mA Low Dropout Voltage Regulator, Fixed Output 5V, Wide Input Voltage Range 40V, SOT-89-3</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP7384.pdf</docs>
+      <footprints>
+        <fp>SOT?89?3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP7384-50Y</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-89-3</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP7384.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VO" type="power_out"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="IFX27001TFV33">
+      <description>1A Low Dropout Regulator, positive, 3.3V fixed output, TO-252-3</description>
+      <docs>https://static6.arrow.com/aropdfconversion/dc75757ae45a88e5f69bdce3f2a651a5fe0ca07d/ifx27001_ds_10.pdf</docs>
+      <footprints>
+        <fp>TO?252*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IFX27001TFV33</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TO-252-3_TabPin2</field>
+        <field name="Datasheet">https://static6.arrow.com/aropdfconversion/dc75757ae45a88e5f69bdce3f2a651a5fe0ca07d/ifx27001_ds_10.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="Q" type="power_out"/>
+        <pin num="3" name="I" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CMT-1032-85-SMT-TR">
+      <uri>C:/SamacSys_PCB_Library/KiCad/CMT-1032-85-SMT-TR/CMT-1032-85-SMT-TR.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="RF_Module">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/RF_Module.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="LDO1" pin="3" pinfunction="I" pintype="power_in"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="LDO1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="LDO2" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="LS1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="MCU1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="MCU1" pin="15" pinfunction="GND" pintype="passive"/>
+      <node ref="MCU1" pin="38" pinfunction="GND" pintype="passive"/>
+      <node ref="MCU1" pin="39" pinfunction="GND" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="LDO1" pin="2" pinfunction="Q" pintype="power_out"/>
+      <node ref="MCU1" pin="2" pinfunction="VDD" pintype="power_in"/>
+      <node ref="MCU1" pin="3" pinfunction="EN" pintype="input"/>
+      <node ref="Q1" pin="1" pinfunction="D" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="LDO2" pin="3" pinfunction="VI" pintype="power_in"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="LDO2" pin="1" pinfunction="VO" pintype="power_out"/>
+      <node ref="LS1" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(C5-Pad2)">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="MCU1" pin="13" pinfunction="IO14" pintype="bidirectional"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="BK" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(D1-Pad3)">
+      <node ref="D1" pin="3" pinfunction="GK" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad4)">
+      <node ref="D1" pin="4" pinfunction="RK" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(MCU1-Pad7)">
+      <node ref="MCU1" pin="7" pinfunction="IO35" pintype="input"/>
+      <node ref="Q1" pin="2" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(MCU1-Pad9)">
+      <node ref="MCU1" pin="9" pinfunction="IO33" pintype="bidirectional"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(MCU1-Pad10)">
+      <node ref="MCU1" pin="10" pinfunction="IO25" pintype="bidirectional"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(MCU1-Pad12)">
+      <node ref="MCU1" pin="12" pinfunction="IO27" pintype="bidirectional"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(MCU1-Pad30)">
+      <node ref="MCU1" pin="30" pinfunction="IO18" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(R6-Pad1)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="16" name="unconnected-(LS1-Pad3)">
+      <node ref="LS1" pin="3" pinfunction="DUMMY_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(LS1-Pad4)">
+      <node ref="LS1" pin="4" pinfunction="DUMMY_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(MCU1-Pad4)">
+      <node ref="MCU1" pin="4" pinfunction="SENSOR_VP" pintype="input"/>
+    </net>
+    <net code="19" name="unconnected-(MCU1-Pad5)">
+      <node ref="MCU1" pin="5" pinfunction="SENSOR_VN" pintype="input"/>
+    </net>
+    <net code="20" name="unconnected-(MCU1-Pad6)">
+      <node ref="MCU1" pin="6" pinfunction="IO34" pintype="input"/>
+    </net>
+    <net code="21" name="unconnected-(MCU1-Pad8)">
+      <node ref="MCU1" pin="8" pinfunction="IO32" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="unconnected-(MCU1-Pad11)">
+      <node ref="MCU1" pin="11" pinfunction="IO26" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="unconnected-(MCU1-Pad14)">
+      <node ref="MCU1" pin="14" pinfunction="IO12" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="unconnected-(MCU1-Pad16)">
+      <node ref="MCU1" pin="16" pinfunction="IO13" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="unconnected-(MCU1-Pad17)">
+      <node ref="MCU1" pin="17" pinfunction="SHD/SD2" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="unconnected-(MCU1-Pad18)">
+      <node ref="MCU1" pin="18" pinfunction="SWP/SD3" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="unconnected-(MCU1-Pad19)">
+      <node ref="MCU1" pin="19" pinfunction="SCS/CMD" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="unconnected-(MCU1-Pad20)">
+      <node ref="MCU1" pin="20" pinfunction="SCK/CLK" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="unconnected-(MCU1-Pad21)">
+      <node ref="MCU1" pin="21" pinfunction="SDO/SD0" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(MCU1-Pad22)">
+      <node ref="MCU1" pin="22" pinfunction="SDI/SD1" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="unconnected-(MCU1-Pad23)">
+      <node ref="MCU1" pin="23" pinfunction="IO15" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="unconnected-(MCU1-Pad24)">
+      <node ref="MCU1" pin="24" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="unconnected-(MCU1-Pad25)">
+      <node ref="MCU1" pin="25" pinfunction="IO0" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(MCU1-Pad26)">
+      <node ref="MCU1" pin="26" pinfunction="IO4" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="unconnected-(MCU1-Pad27)">
+      <node ref="MCU1" pin="27" pinfunction="IO16" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="unconnected-(MCU1-Pad28)">
+      <node ref="MCU1" pin="28" pinfunction="IO17" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="unconnected-(MCU1-Pad29)">
+      <node ref="MCU1" pin="29" pinfunction="IO5" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="unconnected-(MCU1-Pad31)">
+      <node ref="MCU1" pin="31" pinfunction="IO19" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="unconnected-(MCU1-Pad32)">
+      <node ref="MCU1" pin="32" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(MCU1-Pad33)">
+      <node ref="MCU1" pin="33" pinfunction="IO21" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="unconnected-(MCU1-Pad34)">
+      <node ref="MCU1" pin="34" pinfunction="RXD0/IO3" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="unconnected-(MCU1-Pad35)">
+      <node ref="MCU1" pin="35" pinfunction="TXD0/IO1" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="unconnected-(MCU1-Pad36)">
+      <node ref="MCU1" pin="36" pinfunction="IO22" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="unconnected-(MCU1-Pad37)">
+      <node ref="MCU1" pin="37" pinfunction="IO23" pintype="bidirectional"/>
+    </net>
+  </nets>
+</export>
