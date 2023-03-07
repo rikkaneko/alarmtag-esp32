@@ -1,0 +1,26 @@
+### Module positions - created on Thu Feb  2 13:57:53 2023 ###
+### Printed by Pcbnew version (6.0.10)
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                 Package                                            PosX       PosY       Rot  Side
+Buzzer1   CMT-1032-85-SMT-TR  CMT103285SMTTR                                 140.6061  -118.8817  180.0000  top
+C1        1μC                C_0603_1608Metric                              103.3304  -109.3132  -90.0000  top
+C2        1μC                C_0603_1608Metric                              132.8307  -123.9134    0.0000  top
+C3        1μC                C_0603_1608Metric                              132.8561  -122.0559  180.0000  top
+C4        2.2μC              C_0603_1608Metric                              136.3297  -127.9121   90.0000  top
+C5        1μC                C_0603_1608Metric                              127.0000  -129.5400   90.0000  top
+D1        LED_ABGR            LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100   103.2138  -123.3660   90.0000  top
+J0        Conn_01x02          PinHeader_1x02_P1.00mm_Horizontal              100.2409  -109.7637  180.0000  top
+LDO1      IFX27001TFV33       TO-252-3_TabPin2                               103.6223  -114.8780  180.0000  top
+LDO2      LM3480-5.0          SOT-23                                         133.3787  -127.7157  180.0000  top
+MCU1      ESP32-WROOM-32D     ESP32-WROOM-32                                 120.3900  -116.9300    0.0000  top
+Q1        Q_NMOS_DGS          SOT-23                                         135.0869  -110.0603  -90.0000  top
+R1        1K                  R_0603_1608Metric                              132.0800  -116.0400   90.0000  top
+R2        1K                  R_0603_1608Metric                              132.0800  -112.7000  -90.0000  top
+R3        10K_%1              R_0603_1608Metric                              107.4355  -123.2720  180.0000  top
+R4        10K_%1              R_0603_1608Metric                              107.4220  -125.1110  180.0000  top
+R5        10K_%1              R_0603_1608Metric                              107.4288  -121.4867  180.0000  top
+R6        1K_1%               R_0603_1608Metric                              132.1001  -119.3765   90.0000  top
+R7        1K_1%               R_0603_1608Metric                              129.1275  -129.5400   90.0000  top
+SW1       SW_Push             SW_PUSH_6mm                                    123.6972  -134.3300  180.0000  top
+## End
